@@ -12,5 +12,5 @@
 (def app
   (handler/site app-routes))
 
-(defn -main []
-  (run-jetty (handler/site app-routes) {:port 8080 :join? false}))
+(defn -main [port]
+  (run-jetty (handler/site app-routes) {:port port :join? false}))
