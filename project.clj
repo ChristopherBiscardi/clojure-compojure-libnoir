@@ -5,6 +5,7 @@
                  [lib-noir "0.7.9"]
                  [compojure "1.1.6"]]
   :main scaffold-app.handler
+  :min-lein-version "2.0.0"
   :plugins [[lein-ring "0.8.10"]]
   :ring {:handler scaffold-app.handler/app}
   :profiles
